@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครเรียนผ่าน QR Code</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000 url('venom009.jpg') no-repeat center center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1, p {
+            margin: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: calc(1.5rem + 1vw);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .qr-section img {
+            width: 200px; /* กำหนดขนาดกว้างของ QR Code */
+            height: auto;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        .link-section a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: yellow;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-section a:hover {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>สมัครเรียนผ่าน QR Code</h1>
+    <p>สแกน QR Code ด้านล่างหรือคลิกที่ลิงก์เพื่อเข้าสู่แบบฟอร์มสมัครเรียน</p>
+
+    <div class="qr-section">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuzrtbJ0OXStn0Nu8TFkrv0JFZ6mLIMHv1rFAhl7vXqGmoHw/viewform" target="_blank">
+            <img src="d:\vittayasas\venom007.png" alt="QR Code สำหรับสมัครเรียน">
+        </a>
+    </div>
+
+    <div class="link-section">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuzrtbJ0OXStn0Nu8TFkrv0JFZ6mLIMHv1rFAhl7vXqGmoHw/viewform" target="_blank">
+            เข้าผ่านลิ้งค์กดตรงนี้
+        </a>
+    </div>
+
+    <noscript>
+        <p style="color: yellow; background-color: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 5px;">
+            กรุณาเปิดใช้งาน JavaScript เพื่อดู QR Code หรือคลิกที่ลิงก์ด้านล่าง
+        </p>
+    </noscript>
+</body>
+</html>
